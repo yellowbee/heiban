@@ -32,17 +32,27 @@
         </nav>
 
         <div class="row col-sm-12" ng-controller="courseCtrl" style="padding:10px 30px;">
-            <div class="col-sm-3 container">
+            <div class="col-sm-3">
+                <div class="well well-large" style="height:600px;">
                     <h3>My Courses</h3>
-                    <div class="well well-large" style="height:600px;">
-                        <a href="#" class="list-group-item" ng-repeat="course in courses">
-                            {{course.name}}
-                        </a>
-                    </div>
+                    <ul class="list-group" ng-repeat="course in courses">
+                        <li class="list-group-item">{{course.name}}
+                            <ul>
+                                <li>Document</li>
+                                <li>Assignment</li>
+                                <li>Grades</li>
+                                <li>Contact</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="col-sm-9">
-                <h3>System Announcement</h3>
-                <div class="well well-large" style="height:600px;">
+                <div class="col-sm-9  well well-large" style="height:600px;">
+
+                </div>
+                <div class="col-sm-3  well well-large" style="height:600px;">
+                    <h3>Announcement</h3>
                     <ul class="list-group">
                         <li class="list-group-item">
                             <h4 class="list-group-item-heading">{{"Math Announcement"}}</h4>
