@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="heibanApp">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
@@ -9,7 +9,7 @@
     <script src="..\resources\js\app.js"></script>
 
 </head>
-<body>
+<body  ng-app="heibanApp">
     <div class="bs-example">
         <nav role="navigation" class="navbar navbar-default">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,16 +35,15 @@
             <div class="col-sm-3">
                 <div class="well well-large" style="height:600px;">
                     <h3>My Courses</h3>
-                    <ul class="list-group" ng-repeat="course in courses">
-                        <li class="list-group-item">{{course.name}}
+                    <details class="list-group" ng-repeat="course in courses">
+                        <summary class="list-group-item">{{course.id}}</summary>
                             <ul>
                                 <li>Document</li>
                                 <li>Assignment</li>
                                 <li>Grades</li>
                                 <li>Contact</li>
                             </ul>
-                        </li>
-                    </ul>
+                    </details>
                 </div>
             </div>
             <div class="col-sm-9">
@@ -55,7 +54,7 @@
                     <h3>Announcement</h3>
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <h4 class="list-group-item-heading">{{"Math Announcement"}}</h4>
+                            <h4 class="list-group-item-heading">{{"Math Announcemen"}}</h4>
                             <p class="list-group-item-text">{{"No Homework Today!"}}</p>
                         </li>
                     </ul>
