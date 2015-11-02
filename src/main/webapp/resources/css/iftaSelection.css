@@ -187,7 +187,7 @@ table, th, td {
 
 
 
-.lableDefault {
+.lable-default {
     float:left;
     font-weight: normal;
 }
@@ -204,7 +204,7 @@ table, th, td {
     background-color: #F0F0F0;
 }
 
-.inputRight {
+.input-right {
     text-align: right;
     width: 150px;
 }
