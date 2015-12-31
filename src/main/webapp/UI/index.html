@@ -25,14 +25,16 @@
     <div class="col-sm-3" style="background-color: red">
         <h3>My Course</h3>
         <ul>Test
-            <li>Document</li>
-            <li>Assignment</li>
-            <li>Grades</li>
-            <li>Contact</li>
+            <li><a href="#/">Document</a></li>
+            <li><a href="#/assignment">Assignment</a></li>
+            <li><a>Grades</a></li>
+            <li><a>Contact</a></li>
         </ul>
     </div>
-    <div class="col-sm-6" style="background-color: red"></div>
-    <div class="col-sm-3" style="background-color: red"></div>
+    <div class="col-sm-9" style="background-color: red">
+        <div ng-view></div>
+    </div>
+
         <div class="row col-sm-12" ng-controller="courseCtrl" style="padding:10px 30px;">
             <div class="col-sm-3">
                 <div class="well well-large" style="height:600px;">
